@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arabic Word / PDF Counter</title>
+<style>
+  :root{--g:#7ea84b;--g2:#5f8235;--ink:#3c3d3f;--gray:#808285;--bg:#f4f7f1;--line:#e6eade}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--ink);
+       min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px}
+  h1{font-size:28px;margin-bottom:6px}
+  h1 span{color:var(--g2)}
+  p.sub{color:var(--gray);margin-bottom:32px;text-align:center}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;max-width:760px;width:100%}
+  a.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px 22px;
+         text-decoration:none;color:inherit;transition:.15s;display:block}
+  a.card:hover{border-color:var(--g);transform:translateY(-3px);box-shadow:0 12px 26px -18px rgba(95,130,53,.6)}
+  .card .ic{font-size:34px;margin-bottom:12px}
+  .card h2{font-size:17px;margin-bottom:6px}
+  .card p{font-size:13px;color:var(--gray);line-height:1.5}
+  footer{margin-top:34px;font-size:12px;color:#aab0a2}
+</style>
+</head>
+<body>
+  <h1>Arabic <span>Word / PDF</span> Counter</h1>
+  <p class="sub">Count words in Arabic Word, PDF, and PowerPoint files — instantly, in your browser.</p>
+  <div class="cards">
+    <a class="card" href="HTML/TH W Count.html">
+      <div class="ic">📝</div><h2>Word (.docx)</h2>
+      <p>Upload a Word document and get an accurate Arabic word count.</p>
+    </a>
+    <a class="card" href="HTML/TH PDF Count.html">
+      <div class="ic">📄</div><h2>PDF</h2>
+      <p>Count words in PDF files, including scanned pages (OCR).</p>
+    </a>
+    <a class="card" href="HTML/TH P Count.html">
+      <div class="ic">📊</div><h2>PowerPoint (.pptx)</h2>
+      <p>Count words across every slide of a presentation.</p>
+    </a>
+  </div>
+  <footer>Runs entirely in your browser — files never leave your machine.</footer>
+</body>
+</html>
